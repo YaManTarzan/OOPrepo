@@ -15,8 +15,8 @@ Desktop = require("Classes.Desktop")
 local Desktop = Desktop.new()
 
 -- local label = Instance.new("TextLabel")
--- label.Size = Udim2.new(0.5,0, 0.5,0)
--- label.Position = Udim2.new(0.5,0, 0.5,0)
+-- label.Size = Udim2.new(0.5, 0, 0.5, 0)
+-- label.Position = Udim2.new(0.5, 0, 0.5, 0)
 -- label.AnchorPoint = Vector2.new(0.5, 0.5)
 -- label.Text = "Big bob"
 
@@ -45,7 +45,7 @@ function love.draw()
 end
 
 function love.update(dt)
-    Desktop:update()
+    Desktop:update(dt)
   -- fpsCount = fpsCount + 1
 -- label.Rotation = label.Rotation + dt * 90
 end

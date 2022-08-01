@@ -1,3 +1,3 @@
-lerp = function(x,y,a)
-    return x * (1-a) + y * a
+lerp = function(x, y, a)
+    return x * (1 - a) + y * a
 end

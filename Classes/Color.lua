@@ -1,7 +1,7 @@
 local module = {}
 module.__index = module
 
-module.new = function(r,g,b, a)
+module.new = function(r, g, b, a)
     local self = setmetatable({
             R = r or 0,
             G = g or 0,
@@ -12,7 +12,7 @@ module.new = function(r,g,b, a)
     return self
 end
 
-module.fromRGB = function(r,g,b, a)
+module.fromRGB = function(r, g, b, a)
     return module.new(r/255,g/255,b/255,a/255)
 end
 
