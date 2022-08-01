@@ -61,5 +61,13 @@ function Vector2:__call()
     return self.X, self.Y
 end
 
+function Vector2:Lerp(to, a)
+    return lerp(self, to, a)
+end
+
+Vector2.zero = Vector2.new(0,0)
+Vector2.one = Vector2.new(1,1)
+Vector2.xAxis = Vector2.new(1,0)
+Vector2.yAxis = Vector2.new(0,1)
 
 return Vector2
